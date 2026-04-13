@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Juguetería Kids</title>
+   <!--ICONOS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!--ICONOS-->
+
+    <!--BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--BOOSTRAP-->
+
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--ESTILOS-->
+
+</head>
+<body>
+
+     <!--NAV-->
+        <div class="container-nav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold fs-5" href="#">
+                        🧸 Juguetería <span class="text-warning">Kids</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item nav-ancors">
+                                <a class="nav-link  fw-bold fs-5 " aria-current="page" href="index.html"><img
+                                        src="iconos/inicio.svg" alt="">Home</a>
+                            </li>
+                            <li class="nav-item nav-ancors">
+                                <a class="nav-link fw-bold fs-5 " href="tienda.html"> <img src="iconos/tienda.svg"
+                                        alt="">Ubicacion</a>
+                            </li>
+                            <li class="nav-item nav-ancors">
+                                <a class="nav-link fw-bold fs-5 " aria-current="page" href="catalogo.html"><img
+                                        src="iconos/catalogo.svg" alt="">Catalogo</a>
+                            </li>
+                            <li class="nav-item nav-ancors">
+                                <a class="nav-link fw-bold fs-5  " href="contacto.html"> <img src="iconos/contacto.svg"
+                                        alt="">Contacto
+                                    y
+                                    Registro</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex form-control-nav" role="search">
+                            <input class="form-control  me-3 rounded-pill px-4 border-3 " type="search"
+                                placeholder="🔎 Buscar Juguetes..." aria-label="Search">
+
+                            <button class="btn btn-warning rounded-pill px-4 shadow-sm border-3"
+                                type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+     <!--NAV-->
+
+    <!--MAIN-->
+
+    <main>
+        <div class="container px-4 px-md-5 my-4" id="contacto">
+
+            <div class="titulo-principal">
+                <h2>Formulario</h2>
+            </div>
+
+            <form class="row g-4 fs-5 p-3">
+
+                <div class="col-12 col-md-4">
+                    <label for="nombre" class="form-label">Nombres</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control fs-5" id="nombre" placeholder="Ingresa tus Nombres.."
+                            required oninvalid="this.setCustomValidity('No olvides ingresar tus Nombres! ✍️')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="apellido" class="form-label">Apellidos</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control fs-5" id="apellido" placeholder="Ingresa tus Apellidos.."
+                            required oninvalid="this.setCustomValidity('No olvides ingresar tus Apellidos! ✍️')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="usuario" class="form-label">Correo</label>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="email" class="form-control fs-5" id="usuario" placeholder="Ingresa tu Correo.."
+                            required oninvalid="this.setCustomValidity('No olvides ingresar tu Correo! ✍️')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control fs-5" id="password"
+                            placeholder="Ingresa tu Contraseña.." required
+                            oninvalid="this.setCustomValidity('No olvides ingresar tu Contraseña! ✍️')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="confirmar" class="form-label">Confirma tu Contraseña</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control fs-5" id="confirmar"
+                            placeholder="Confirmar Contraseña.." required
+                            oninvalid="this.setCustomValidity('Ingresa nuevamente tu Contraseña! ✍️')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <div class="input-group">
+                        <input type="tel" maxlength="9" class="form-control fs-5" id="telefono" placeholder="+51" pattern="[0-9]+"
+                            required oninvalid="this.setCustomValidity('No olvides ingresar tu Telefono! ✍️')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="pais" class="form-label">País</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control fs-5" id="pais" placeholder="Ingresa tu Pais.." required
+                            oninvalid="this.setCustomValidity('No olvides ingresar tu Pais! ✍️')"
+                            oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="genero" class="form-label">Género</label>
+                    <select class="form-select fs-5" id="genero" required>
+                        <option value="" disabled selected>Selecciona una opción...</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label class="form-label">Seleccione su apreciación de la pagina</label>
+
+                    <div class="form-radio d-flex gap-3">
+                        <label><input type="radio" name="apreciacion" value="bajo" required> Bajo</label>
+                        <label><input type="radio" name="apreciacion" value="medio"> Medio</label>
+                        <label><input type="radio" name="apreciacion" value="alto"> Alto</label>
+                    </div>
+
+                </div>
+
+                <div class="col-12 mt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="terminos" required>
+                        <label class="form-check-label " for="terminos">
+                            Acepto todos los terminos y condiciones.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="container text-center my-4">
+                    <div class="row form-boton-contac ">
+                        <div class="col ">
+                             <button class="btn  btn-secondary text-bg-secondary p-3 
+                             border border-white w-100 p-1 " type="reset">Limpiar</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-secondary text-bg-secondary p-3 
+                            border border-white w-100 p-1 " type="submit">Enviar</button>
+                        </div>
+                       
+                    </div>
+                </div>
+
+               
+
+            </form>
+
+        </div>
+    </main>
+
+    <!--MAIN-->
+
+
+    <!--FOOTER-->
+ <footer id="contacto" class="py-5 bg-danger bg-gradient">
+  <div class="container ">
+
+    <div class="row g-4">
+
+      <!-- Enlaces rápidos -->
+      <div class="col-6 col-sm-6 col-md-3">
+        <h5 class="text-dark mb-3 fuente-footer">Enlaces Rápidos</h5>
+        
+        <ul class="list-unstyled enlace-footer lh-lg ">
+          <li><a class="text-white text-decoration-none" href="index.html"><i class="bi bi-house me-2"></i> Home</a></li>
+         
+          <li><a class="text-white text-decoration-none" href="tienda.html"> <i class="bi bi-geo-alt me-2"></i> Ubicación</a></li>
+          
+          <li><a class="text-white text-decoration-none" href="catalogo.html"> <i class="bi bi-grid me-2"></i> Catálogo</a></li>
+        
+          <li><a class="text-white text-decoration-none" href="contacto.html#contacto"> <i class="bi bi-chat-dots me-2"></i> Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Métodos de pago -->
+      <div class="col-6 col-sm-6 col-md-3" id="metodospago">
+        <h5 class="text-dark mb-3 fuente-footer">Métodos de Pago</h5>
+        <ul class="list-unstyled enlace-footer lh-lg">
+          <li><a class="text-white text-decoration-none " href="https://www.visa.com.pe/"><i class="bi bi-credit-card me-2"></i>Visa</a></li>
+          <li><a class="text-white text-decoration-none" href="https://www.yape.com.pe/"><i class="bi bi-phone me-2"></i> Yape</a></li>
+          <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-bank me-2"></i> Transferencia</a></li>
+          <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-cash-coin me-2"></i> Efectivo</a></li>
+        </ul>
+      </div>
+
+      <!-- Envíos -->
+      <div class="col-6 col-sm-6 col-md-3" id="envios">
+        <h5 class="text-dark mb-3 fuente-footer ">Envíos</h5>
+        <ul class="list-unstyled enlace-footer lh-lg">
+          <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-truck me-2"></i> Envío rápido</a></li>
+          <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-box-seam me-2"></i> Empaques seguros</a></li>
+          <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-shield-check me-2"></i> Envío seguro</a></li>
+          <li><a class="text-white text-decoration-none" href="#"><i class="bi bi-globe-americas me-2"></i> Todo el país</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-6 col-sm-6 col-md-3" id="contactos">
+        <h5 class="text-dark mb-3 fuente-footer ">Contacto</h5>
+        <p class="text-white mb-1 enlace-footer lh-lg"><i class="bi bi-envelope me-2"></i> jugueteskids@info.com</p>
+        <p class="text-white mb-1 enlace-footer lh-lg"><i class="bi bi-telephone me-2"></i> +51 969 768 346</p>
+        <p class="text-white mb-0 enlace-footer lh-lg"><i class="bi bi-geo-alt me-2"></i> Av. Principal 123</p>
+      </div>
+
+    </div>
+
+    <hr class="border-light my-4">
+
+    <p class="text-center text-white mb-0 enlace-footer">
+      © 2026 JuguetesKids. Todos los derechos reservados.
+    </p>
+
+  </div>
+</footer>
+<!--FOOTER-->
+
+ <!-- BOTÓN WHATSAPP -->
+    <a href="https://www.whatsapp.com/" target="_blank" class="position-fixed bottom-0 end-0 m-3">
+      
+         <img src="img/Whatssap.png" alt="WhatsApp" class=" icono-whatssap rounded-circle shadow ">
+     
+    </a>
+     <!-- BOTÓN WHATSAPP -->
+      
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

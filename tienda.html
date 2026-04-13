@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Juguetería Kids</title>
+    <!--ICONOS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!--ICONOS-->
+
+    <!--BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--BOOSTRAP-->
+
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--ESTILOS-->
+
+</head>
+
+<body>
+
+    <!--NAV-->
+    <div class="container-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-5" href="#">
+                    🧸 Juguetería <span class="text-warning">Kids</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item nav-ancors">
+                            <a class="nav-link  fw-bold fs-5 " aria-current="page" href="index.html"><img
+                                    src="iconos/inicio.svg" alt="">Home</a>
+                        </li>
+                        <li class="nav-item nav-ancors">
+                            <a class="nav-link fw-bold fs-5 " href="tienda.html"> <img src="iconos/tienda.svg"
+                                    alt="">Ubicacion</a>
+                        </li>
+                        <li class="nav-item nav-ancors">
+                            <a class="nav-link fw-bold fs-5 " aria-current="page" href="catalogo.html"><img
+                                    src="iconos/catalogo.svg" alt="">Catalogo</a>
+                        </li>
+                        <li class="nav-item nav-ancors">
+                            <a class="nav-link fw-bold fs-5  " href="contacto.html"> <img src="iconos/contacto.svg"
+                                    alt="">Contacto
+                                y
+                                Registro</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex form-control-nav" role="search">
+                        <input class="form-control  me-3 rounded-pill px-4 border-3 " type="search"
+                            placeholder="🔎 Buscar Juguetes..." aria-label="Search">
+
+                        <button class="btn btn-warning rounded-pill px-4 shadow-sm border-3"
+                            type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!--NAV-->
+
+
+
+
+
+
+
+
+    <!--MAIN-->
+
+    <main class="container my-5">
+        <h2 class="titulo-principal fw-bold "> Nuestra Tienda</h2>
+        <p class="descripcion enlace-footer text-center"><br>
+            Visítanos y descubre los mejores juguetes para niños.
+            Diversión, aprendizaje y creatividad en un solo lugar.
+        </p>
+
+        <!-- HORARIO -->
+        <h2 class="text-center fw-bold mb-4 titulo-principal my-5">Horario de Atención</h2>
+
+        <div class="table-responsive">
+            <table class="table table-hover table-striped text-center align-middle">
+                <thead class="table-danger">
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes - Viernes</td>
+                        <td>9:00 am - 8:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>9:00 am - 6:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td class="text-danger fw-bold">Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- UBICACIÓN -->
+        <h2 class="text-center fw-bold mt-5 mb-4 titulo-principal">Ubicación de nuestra tienda</h2>
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- CARD INFO -->
+            <div class="col-md-5 d-flex align-items-center justify-content-center">
+                <div class="card shadow-sm w-75 card-hover overflow-hidden">
+                    <img src="img/Tienda.jpg" class="card-img-top img-fluid" alt="Tienda">
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <strong><i class="bi bi-geo-alt-fill text-danger me-2"></i>Dirección:</strong><br>
+                            Jirón Cusco 626-640, Lima.
+                        </p>
+
+                        <p class="card-text">
+                            <strong><i class="bi bi-telephone-fill text-danger me-2"></i>Teléfono:</strong><br>
+                            +51 969 768 346
+                        </p>
+
+                        <p class="card-text">
+                            <strong><i class="bi bi-envelope-fill text-danger me-2"></i>Correo:</strong><br>
+                            jugueteskids@info.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAPA -->
+            <div class="col-md-7">
+                <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5518.0775639589365!2d-77.03131748716297!3d-12.052459984068749!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8ba1d038199%3A0xf0d15ead22bab8e0!2sGaler%C3%ADa%20Mercado%20Central!5e0!3m2!1ses-419!2spe"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!--MAIN-->
+
+    <!--FOOTER-->
+    <footer class="py-4 bg-danger bg-gradient">
+        <div class="container py-3">
+            <div class="row">
+
+                <!-- Categorías -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="fuente-footer text-dark">Categorias</h5>
+                    <ul class="nav flex-column enlace-footer">
+                        <li class="nav-item mb-2">
+                            <a href="catalogo.html#peluches" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-heart-fill me-2"></i>Peluche
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="catalogo.html#muñecas" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-person-hearts me-2"></i>Muñecas
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="catalogo.html#carros" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-car-front-fill me-2"></i>Carros
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="catalogo.html#juegosmesa" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-controller me-2"></i>Juegos de Mesa
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Ayuda -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="fuente-footer text-dark">Ayuda</h5>
+                    <ul class="nav flex-column enlace-footer">
+                        <li class="nav-item mb-2 ">
+                            <a href="#" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-question-circle me-2"></i>Preguntas Frecuentes
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="contacto.html#metodospago" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-credit-card me-2"></i>Métodos de Pago
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="contacto.html#envios" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-truck me-2"></i>Envíos
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-arrow-repeat me-2"></i>Devoluciones
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="contacto.html#contactos" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-envelope me-2"></i>Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nosotros -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="fuente-footer text-dark">Nosotros</h5>
+                    <ul class="nav flex-column enlace-footer">
+                        <li class="nav-item mb-2">
+                            <a href="index.html#nosotros" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-book me-2 "></i>Historia
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="index.html#misiones" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-bullseye me-2"></i>Misión
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="index.html#valores" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-stars me-2"></i>Valores
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="tienda.html" class="nav-link p-0 text-white enlace-footer">
+                                <i class="bi bi-shop me-2"></i>Tiendas
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Suscripción -->
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5 class="fuente-footer text-white">Suscríbete</h5>
+                        <p class="text-white enlace-footer">Recibe promociones y novedades.</p>
+
+                        <div class="d-flex flex-column flex-sm-row gap-2">
+                            <input type="email" class="form-control enlace-footer" placeholder="Subscribete...">
+                            <button class="btn btn-dark enlace-footer">
+                                <i class="bi bi-send me-1"></i>Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Parte final -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+                <p class="text-white mb-0 enlace-footer">© 2026 JuguetesKids</p>
+
+                <div>
+                    <a href="https://www.facebook.com/ " target="_blank" class="text-white me-3"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-white me-3"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="text-white me-3"><i
+                            class="bi bi-youtube"></i></a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-white me-3"><i
+                            class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--FOOTER-->
+
+     <!-- BOTÓN WHATSAPP -->
+    <a href="https://www.whatsapp.com/" target="_blank" class="position-fixed bottom-0 end-0 m-3">
+      
+         <img src="img/Whatssap.png" alt="WhatsApp" class=" icono-whatssap rounded-circle shadow ">
+     
+    </a>
+     <!-- BOTÓN WHATSAPP -->
+      
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
